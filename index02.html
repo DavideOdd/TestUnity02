@@ -6,7 +6,6 @@
     <title>Unity WebGL Player | 2DTemplate</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script type="text/javascript" src="Build/export.loader.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -106,7 +105,6 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-          unityInstance.SetFullscreen(1);
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
